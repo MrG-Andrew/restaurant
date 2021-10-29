@@ -22,5 +22,7 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
-    
+    public function foodmenu(){
+        return view('admin.foodmenu');
+    }
 }

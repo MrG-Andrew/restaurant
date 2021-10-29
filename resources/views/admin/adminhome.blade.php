@@ -6,9 +6,9 @@
     @include("admin.admincss")
   </head>
   <body>
-    
-    @include("admin.navbar")
-        
+  <div class="container-scroller">
+      @include("admin.navbar")
+  </div>      
     @include("admin.adminjs")
   </body>
 </html>
