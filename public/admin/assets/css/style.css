@@ -21133,3 +21133,27 @@ div.tagsinput {
   flex-grow: 1; }
 
 /*# sourceMappingURL=maps/style.css.map */
+/* usertable */
+.usertable{
+  position: relative;
+  top: 60px;
+  left: 150px;
+}
+
+.actualusertable{
+  background-color: grey;
+  border: 3px;
+}
+
+.usertableheader{
+  padding: 30px;
+}
+
+.usertablerows{
+  text-align: center;
+}
+
+.usertablerows td a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.658);
+}
