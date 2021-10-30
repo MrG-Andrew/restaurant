@@ -47,6 +47,35 @@
 
             </form>
 
+
+            <br> <br><br> 
+            <div>
+
+                <table style = "background-color:black; border:3px solid white">
+
+                    <tr align = "center">
+
+                        <th style = "padding: 30px border:3px solid white">title</th>
+                        <th style = "padding: 30px border:3px solid white">price</th>
+                        <th style = "padding: 30px border:3px solid white">image</th>
+                        <th style = "padding: 30px border:3px solid white">description</th>
+                        <th style = "padding: 30px border:3px solid white">Action</th>
+
+                    </tr>
+                    
+                    @foreach($data as $data)
+                    <tr align = "center">
+                        <td style = "border:3px solid white">{{$data->title}}</td>
+                        <td style = "border:3px solid white">${{$data->price}}</td>
+                        <td style = "border:3px solid white" width = "50px" height = "50px"><img src = "/foodimage/{{$data->image}}"></td>
+                        <td style = "border:3px solid white">{{$data->description}}</td>
+                        <td style = "border:3px solid white"><a href = '{{url("/deletemenu", $data->id)}}'>Delete</a></td>
+                    </tr>
+                    @endforeach
+                </table>
+
+            </div>
+
         </div>
 
 

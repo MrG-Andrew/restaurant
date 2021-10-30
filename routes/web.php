@@ -32,6 +32,8 @@ Route::post('/uploadfood',[AdminController::class,'upload']);
 
 Route::get('/redirects',[HomeController::class,'redirects']);
 
+Route::get('/deletemenu/{id}',[AdminController::class,'deletemenu']);
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
