@@ -21157,3 +21157,19 @@ div.tagsinput {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.658);
 }
+
+.divincludesform{
+  position: relative;
+  left: 150px;
+  top: 60px;
+  
+}
+
+.submitbtnfoodmenu{
+  background-color: hotpink;
+}
+
+.formwritefield{
+  color: #363580;
+  background-color: #e6e6e6;
+}

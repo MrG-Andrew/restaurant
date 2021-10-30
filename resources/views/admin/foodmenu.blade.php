@@ -9,21 +9,21 @@
     <div class="container-scroller">
         @include("admin.navbar")
         
-        <div>
+        <div class="divincludesform">
 
-            <form action="">
-
+            <form action="{{url('/uploadfood')}}" method="post" enctype="multipart/form-data">
+                @csrf
                 <div>
 
                     <label for="title">Title</label>
-                    <input type="text" name = "title" placeholder="title" required>
+                    <input type="text" name = "title" placeholder="title" class = 'formwritefield' required>
 
                 </div>
 
                 <div>
 
                     <label for="price">Price</label>
-                    <input type="num" name = "price" placeholder="price" required>
+                    <input type="num" name = "price" placeholder="price" class = 'formwritefield' required>
 
                 </div>
 
@@ -37,12 +37,12 @@
                 <div>
 
                     <label for="description">Description</label>
-                    <input type="text" name = "description" placeholder="description" required>
+                    <input type="text" name = "description" placeholder="description" class = 'formwritefield' required>
 
                 </div>
 
                 <div>
-                    <input type="submit" value="Save">
+                    <input type="submit" value="Save" class="submitbtnfoodmenu">
                 </div>
 
             </form>
