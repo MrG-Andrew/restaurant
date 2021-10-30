@@ -21173,3 +21173,8 @@ div.tagsinput {
   color: #363580;
   background-color: #e6e6e6;
 }
+
+/* .imgmenuitems{
+  background-image: url('/foodimage/{{$data->image}}');
+} */
+/* notworking */
